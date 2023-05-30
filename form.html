@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js">
+    </script>
+</head>
+
+<body>
+    <div data-role="page" id="register">
+        <div data-role="header">
+            <h1>Resister Form</h1>
+        </div>
+        <div data-role="content">
+            <form>
+                <label  for="">Name</label>
+                <input type="text" name="" id="">
+                <lable for="">Email</lable>
+                <input type="email">
+                <lable for="">Contact No</lable>
+                <input type="number" name="" id="">
+                <lable for="">Address</lable>
+                <textarea name="" id="" cols="30" rows="10" ></textarea>
+                <lable for="">Upload Photo</lable>
+                <input type="file" name="" id="">
+                <button data-icon="check" class="ui-btn ui-shadow ui-corner-all ui-icon-check ui-btn-icon-top">Register Now</button>
+                  </form>
+
+        </div>
+        <div data-role="footer">
+           <h3>@copyright at ecoRise</h3> 
+        </div>
+    </div>
+    <script>
+        $(document).on("pagecreate", "#register", function() {
+            $("button").on("click", function(){
+            alert("Register Successs...!")
+            })
+        })
+    </script>
+
+</body>
+
+</html>
